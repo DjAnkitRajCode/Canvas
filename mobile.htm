@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mobile</title>
+    <link href="mobile.css" rel="stylesheet">
+</head>
+<body>
+    
+    <canvas id="mobile" height="800px" width="500px" style="border: 4px solid black"></canvas>
+    
+    <script>
+    
+        var a = document.getElementById("mobile")
+        
+        var ctx = a.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.moveTo(100,50);
+        ctx.lineTo(380,50);
+        ctx.lineTo(380,150);
+        ctx.lineTo(383,150);
+        ctx.lineTo(383,180);
+        ctx.lineTo(380,180);
+        ctx.lineTo(380,195);
+        ctx.lineTo(383,195);
+        ctx.lineTo(383,227);
+        ctx.lineTo(380,227);
+        ctx.lineTo(383,227);
+        ctx.lineTo(383,260);
+        ctx.lineTo(380,260);
+        ctx.lineTo(380,600);
+        ctx.lineTo(100,600);
+        ctx.lineTo(100,50);
+        ctx.fillStyle="rgba(219, 141, 253, 0.67)";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(110,90);
+        ctx.lineTo(370,90);
+        ctx.lineTo(370,570);
+        ctx.lineTo(110,570);
+        ctx.lineTo(110,90);
+        ctx.fillStyle="white";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(190,60);
+        ctx.lineTo(300,60);
+        ctx.lineTo(300,70);
+        ctx.lineTo(190,70);
+        ctx.lineTo(190,60);
+        ctx.fillStyle="white";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.arc(309,65,3,0,Math.PI*2);
+        ctx.stroke();
+        ctx.fill();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(220,575);
+        ctx.lineTo(260,575);
+        ctx.lineTo(260,590);
+        ctx.lineTo(220,590);
+        ctx.lineTo(220,575);
+        ctx.fillStyle="rgba(244, 244, 255, 0.81)";
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+    
+</body>
+</html>

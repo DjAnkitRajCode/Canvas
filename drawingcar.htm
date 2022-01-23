@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="draw" width="700px" height="400px" style="border:2px solid black">
+        <script>
+            
+            var data = document.getElementById("draw");
+            
+            var ctx = data.getContext("2d");
+            
+            ctx.moveTo(50,220);
+            ctx.lineTo(150,220);
+            ctx.lineTo(200,160);
+            ctx.lineTo(450,160);
+            ctx.lineTo(500,220);
+            ctx.lineTo(600,220);
+            ctx.lineTo(600,280);
+            ctx.lineTo(520,280);
+            ctx.lineTo(520,260);
+            ctx.lineTo(510,250);
+            ctx.lineTo(470,250);
+            ctx.lineTo(460,260);
+            ctx.lineTo(460,280);
+            ctx.lineTo(190,280);
+            ctx.lineTo(190,260);
+            ctx.lineTo(180,250);
+            ctx.lineTo(140,250);
+            ctx.lineTo(130,260);
+            ctx.lineTo(130,280);
+            ctx.lineTo(50,280);
+            ctx.lineTo(50,220);
+            ctx.stroke();
+            ctx.fillStyle = "cyan";
+            ctx.fill()
+        </script>
+    </canvas>
+    <canvas id="pen" width="700px" height="400px" style="border:2px solid black">
+        <script>
+            
+            var b = document.getElementById("pen");
+            
+            var ctx = b.getContext("2d");
+            
+            ctx.moveTo(100,150);
+            ctx.lineTo(400,150);
+            ctx.lineTo(550,200);
+            ctx.lineTo(400,250);
+            ctx.lineTo(100,250);
+            ctx.lineTo(100,150);
+            
+            ctx.moveTo(400,150);
+            ctx.lineTo(390,160);
+            ctx.lineTo(400,170);
+            ctx.lineTo(390,180);
+            ctx.lineTo(400,190);
+            ctx.lineTo(390,200);
+            ctx.lineTo(400,210);
+            ctx.lineTo(390,220);
+            ctx.lineTo(400,230);
+            ctx.lineTo(390,240);
+            ctx.lineTo(400,250);
+            ctx.stroke();
+            ctx.fillStyle = "skin";
+            ctx.fill()
+        </script>
+    </canvas>
+</body>
+</html>

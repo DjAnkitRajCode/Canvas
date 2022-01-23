@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <canvas id="draw" width="700px" height="600px" style="border:2px solid black">
+        
+        <script>
+            
+            var data = document.getElementById("draw");
+            
+            var ctx = data.getContext("2d");
+            
+            ctx.moveTo(150,350);
+            ctx.lineTo(150,150);
+            ctx.lineTo(450,120);
+            ctx.lineTo(450,300);
+            ctx.lineTo(600,360);
+            ctx.lineTo(300,430);
+            ctx.lineTo(150,350);
+            ctx.lineTo(450,300);
+            
+            ctx.moveTo(440,295);
+            ctx.lineTo(440,130);
+            ctx.lineTo(160,160);
+            ctx.lineTo(160,340);
+            ctx.lineTo(440,295);
+            
+            ctx.moveTo(175,355);
+            ctx.lineTo(450,310);
+            ctx.lineTo(470,318);
+            ctx.lineTo(195,365);
+            ctx.lineTo(175,355);
+            
+            ctx.moveTo(205,370);
+            ctx.lineTo(477,322);
+            ctx.lineTo(498,330);
+            ctx.lineTo(228,381);
+            ctx.lineTo(205,370);
+            
+            ctx.moveTo(240,388);
+            ctx.lineTo(505,335);
+            ctx.lineTo(528,343);
+            ctx.lineTo(260,397);
+            ctx.lineTo(240,388);
+            
+            ctx.moveTo(350,384);
+            ctx.lineTo(453,363);
+            ctx.lineTo(497,380);
+            ctx.lineTo(395,403);
+            ctx.lineTo(350,384);
+            ctx.stroke();
+            
+        </script>
+        
+    </canvas>
+    
+</body>
+</html>

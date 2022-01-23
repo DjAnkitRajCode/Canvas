@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <canvas id="draw" width="500px" height="500px" style="border:2px solid black">
+        
+        <script>
+            
+            var data = document.getElementById("draw");
+            
+            var ctx = data.getContext("2d");
+            
+            ctx.moveTo(50,200);
+            ctx.lineTo(250,50);
+            ctx.lineTo(450,200);
+            ctx.lineTo(400,200);
+            ctx.lineTo(400,400);
+            ctx.lineTo(100,400);
+            ctx.lineTo(100,200);
+            ctx.lineTo(50,200);
+            ctx.stroke();
+            ctx.fillStyle = "orange";
+            ctx.fill()
+        </script>
+        
+    </canvas>
+    
+</body>
+</html>
